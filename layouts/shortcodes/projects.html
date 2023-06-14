@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/style.css">
+<span class=projectlist>
+{{range.Site.RegularPages.ByDate.Reverse}}
+<!-- range.Site.RegularPages.ByDate -->
+{{ if in .Params.tags "project" }}
+<section class="project">
+	<header class="header">
+		<h3 id="title">
+		{{ if .Params.link }}
+			<a href="{{.Params.link}}" id="link">
+				<span id="title">{{.Title}}</span>
+				{{ partial "svg" (dict "icon" "icons/link.svg" "fill" "currentColor" "height" "1em" "class" "link-icon") }}
+			</a>
+		{{ else }}
+			{{.Title}}
+		{{ end }}
+		</h3>
+		<p class="sub">
+				{{.Params.Subheading}}
+		</p>
+	</header>
+	<span id=desc>
+			{{.Params.Desc}}
+	</span>
+</section>
+{{ end }}
+{{ end }}
+</span>
+<!-- </ul> -->

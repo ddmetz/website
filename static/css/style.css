@@ -1,0 +1,46 @@
+.projectlist {
+  text-align: left;
+  margin: 0;
+}
+
+.project {
+  line-height 1.33;
+  margin 0;
+  margin-bottom: 1.1rem;
+}
+
+.project p {
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.33;
+  margin-bottom: 0.6rem;
+}
+
+.project #desc {
+  margin: 0;
+  line-height: 1.33;
+}
+
+h3.project {
+  margin 0;
+}
+
+.project #link {
+  fill: var(--fg);
+  color: var(--lightgrey);
+  font-weight: 300;
+  margin: 0;
+
+}
+.project #link:hover {
+  fill: var(--fg);
+  color: var(--fg);
+  transition: 0.3s;
+}
+
+.project #title {
+  font-weight: 700;
+  line-height: 1.33;
+  margin: 0;
+  color: var(--fg);
+}

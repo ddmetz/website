@@ -1,0 +1,47 @@
+{{ define "main" }}
+  {{ $Date := .Date.Format .Site.Params.dateForm }}
+  {{ $Lastmod := .Lastmod.Format .Site.Params.dateForm }}
+  <div id="heading">
+    <div class="wrap">
+      <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+      <ul class="icons">
+        {{ if .Draft }}
+          <li>
+            <span class="important" title="Draft"><i class="fas fa-flask"></i></span>
+          </li>
+        {{ end }}
+        {{ with .Site.Params.Pages.Raw }}
+          <li>
+            <a title="Raw" href="{{ printf . $.File.Path }}"><i class="far fa-file"></i></a>
+          </li>
+        {{ end }}
+        {{ with .Site.Params.Pages.History }}
+          <li>
+            <a title="{{ $Lastmod }}" href="{{ printf . $.File.Path }}"><i class="fab fa-git-square"></i></a>
+          </li>
+        {{ end }}
+        {{ with .Site.Params.Pages.Edit }}
+          <li>
+            <a title="Suggest an edit" href="{{ printf . $.File.Path }}"><i class="fas fa-pen-square"></i></a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+    <!-- {{ if not .Date.IsZero }} -->
+    <!--   <div class="date"> -->
+    <!--     {{ if eq $Date $Lastmod }} -->
+    <!--       <p>Posted on <time class="relative" datetime="{{ .Date }}">{{ $Date }}</time>.</p> -->
+    <!--     {{ else }} -->
+    <!--       <p>Posted on <time class="relative" datetime="{{ .Date }}">{{ $Date }}</time> (↻ <time class="relative" datetime="{{ $Lastmod }}">{{ $Lastmod }}</time>).</p> -->
+    <!--     {{ end }} -->
+    <!--   </div> -->
+    <!-- {{ end }} -->
+  </div>
+  <div class="invisible">
+    {{ .TableOfContents }}
+  </div>
+  <div id="context-navigation">
+    <a><i class="fas fa-angle-up"></i></a>
+  </div>
+  {{ .Content }}
+{{ end }}

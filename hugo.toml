@@ -1,0 +1,23 @@
+baseURL = "http://example.org/"
+defaultContentLanguage = "en"
+languageCode = "en"
+
+title = ""
+
+theme = "custom"
+
+[menu]
+
+  [[menu.navigation]]
+    name = "github"
+    url = "https://github.com/ddmetz"
+  [[menu.navigation]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/d-metz/"
+
+# Automatically generate robots.txt
+# enableRobotsTXT = true
+[params]
+  icon = "/img/fav.png"
+  dateForm = "January 2, 2006"
+
