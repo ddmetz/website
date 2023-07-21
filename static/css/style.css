@@ -11,6 +11,7 @@
 
 .project p {
   margin: 0;
+  color: var(--fg-dark);
   font-weight: 300;
   line-height: 1.33;
   margin-bottom: 0.6rem;
