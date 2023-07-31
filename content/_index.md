@@ -5,7 +5,7 @@ title: "d metz"
   
 #### I'm a programmer and tinkerer :)
 
-![alt text](/img/image.png)
+![art by me](/img/image.png)
 
 ## Projects
 {{< projects >}}
