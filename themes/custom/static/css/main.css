@@ -29,7 +29,6 @@
 }
 
 html {
-  background-image: url("/img/bg.png");
   background-color: black;
   min-height: 100%; /* Look, it's not fixed anymore! */
 
