@@ -73,5 +73,5 @@ h3.project {
   color: var(--fg-dark);
   border-radius: 1rem;
   padding: 0.25rem 0.75rem;
-  margin: 0.3rem 0;
+  margin: 0.3rem 4px 0.3rem 0px;
 }
