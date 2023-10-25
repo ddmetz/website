@@ -4,8 +4,9 @@
 :root {
   /* --bg: #19171f; */
   --bg: #141319;
-  --surface1: #19171f;
-  --lightgrey: #635f77;
+  --surface1: #201F28;
+  --surface2: #2D2B36;
+  --lightgrey: #363340;
   --purple: #b7a3ff;
   --blue: #82acff;
   /* --fg: #f7f8fa; */
@@ -53,6 +54,7 @@ body {
 
 img {
   max-width: 100%;
+  filter: drop-shadow(0 0 0.3rem black);
 }
 
 a {
@@ -97,16 +99,25 @@ a:hover {
   padding: 0.1em;
 }
 
+hr {
+  border-width: 1px;
+  border-style: solid;
+  color: var(--lightgrey);
+  margin: 2rem 0 2rem;
+
+}
+
 footer {
   padding: 0 2rem 2rem 2rem;
   font-size: var(--font-size-tiny);
   text-align: center;
+  color: var(--fg-dark);
 }
 
-footer hr {
-  color: var(--lightgrey);
-  margin: 1rem 0 2rem;
-
+footer #contact {
+  font-weight: 700;
+  padding: 24px;
+  color: var(--fg-dark);
 }
 
 footer ul {

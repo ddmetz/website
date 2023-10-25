@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/style.css">
 <span class=projectlist>
-{{range.Site.RegularPages.ByDate.Reverse}}
+{{range ( where .Site.RegularPages "Type" "projects").ByDate.Reverse}}
 <!-- range.Site.RegularPages.ByDate -->
 {{ if in .Params.tags "project" }}
 <section class="project">
