@@ -1,9 +1,11 @@
 # hi, i'm d
+
 #### (aka shezdy)
 
-i'm a software developer and tinkerer. some of my interests include linux, open source, and running amock in your flowerbeds.
+i'm a software developer and tinkerer. some of my interests include linux, open source, and running amok in your flowerbeds.
 
 ## projects
+
 some of my projects are on my [github](https://github.com/ddmetz).
 
 a few interesting ones:
@@ -13,7 +15,6 @@ a few interesting ones:
 - [raycaster](https://github.com/ddmetz/raycaster): small raycasting game. (à la wolfenstein 3d)
 - [plantfetch](https://github.com/ddmetz/plantfetch): cute little system information tool.
 - [playlast](https://github.com/ddmetz/playlast): view last.fm statistics for spotify playlists.
-
 
 ## contact
 
