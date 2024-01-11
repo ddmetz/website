@@ -1,7 +1,7 @@
 # hi, i'm d
 #### (aka shezdy)
 
-i'm a software developer with an obsession for tinkering. some of my interests include linux, open source, and running amock in your flowerbeds.
+i'm a software developer and tinkerer. some of my interests include linux, open source, and running amock in your flowerbeds.
 
 ## projects
 some of my projects are on my [github](https://github.com/ddmetz).
