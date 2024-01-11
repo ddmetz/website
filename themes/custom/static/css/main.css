@@ -1,22 +1,21 @@
-@import url("/fonts/inter/inter.css");
+@import url("/fonts/hanken-grotesk/hanken-grotesk.css");
 
 /* Fonts */
 :root {
-  /* --bg: #19171f; */
-  --bg: #141319;
-  --surface1: #201F28;
-  --surface2: #2D2B36;
+  --bg: #000000;
+  --surface1: #201f28;
+  --surface2: #2d2b36;
   --lightgrey: #363340;
+  --accent: #bfadff;
   --purple: #b7a3ff;
   --blue: #82acff;
-  /* --fg: #f7f8fa; */
-  --fg: #CDD0D8;
-  --fg-dark: #B0B5C2;
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-monospace: monospace;
-}
+  --fg: #eeeeee;
+  --fg-dark: #aaaaaa;
 
-:root {
+  --font-sans: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-monospace: monospace;
   --font-size-huge: 3rem;
   --font-size-large: 2rem;
   --font-size-bigger: 1.5rem;
@@ -31,8 +30,7 @@
 
 html {
   background-color: black;
-  min-height: 100%; /* Look, it's not fixed anymore! */
-
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -40,25 +38,26 @@ html {
 body {
   font-family: var(--font-sans);
   font-size: var(--font-size-normal);
+  line-height: 1.4em;
+
   display: flex;
   flex-direction: column;
-  max-width: 975px;
+  max-width: 720px;
   margin: 0 auto;
   width: 100%;
   flex-grow: 1;
-  background-color: var(--bg);
-  /* background-color: black; */
-  color: var(--fg);
   padding: 0;
+
+  background-color: var(--bg);
+  color: var(--fg);
 }
 
 img {
   max-width: 100%;
-  filter: drop-shadow(0 0 0.3rem black);
 }
 
 a {
-  color: var(--blue);
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -69,13 +68,8 @@ a:hover {
 #header {
   display: flex;
   justify-content: space-between;
-  font-size: var(--font-size-big);
-  padding: 2rem 2rem 0 2rem; 
-}
-
-#header a {
-  color: var(--fg);
-  text-decoration: none;
+  font-size: var(--font-size-normal);
+  padding: 2rem 2rem 0 2rem;
 }
 
 #header a:hover {
@@ -104,19 +98,11 @@ hr {
   border-style: solid;
   color: var(--lightgrey);
   margin: 2rem 0 2rem;
-
 }
 
 footer {
   padding: 0 2rem 2rem 2rem;
-  font-size: var(--font-size-tiny);
-  text-align: center;
-  color: var(--fg-dark);
-}
-
-footer #contact {
-  font-weight: 700;
-  padding: 24px;
+  font-size: var(--font-size-normal);
   color: var(--fg-dark);
 }
 
@@ -133,25 +119,24 @@ footer li + li::before {
   content: "br";
 }
 
-/* Headings */
 h1 {
   font-size: var(--font-size-huge);
-  font-weight: bold;
+  font-weight: 900;
 }
 
 h2 {
   font-size: var(--font-size-large);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 h3 {
   font-size: var(--font-size-bigger);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 h4 {
   font-size: var(--font-size-big);
-  font-weight: normal;
+  font-weight: 600;
 }
 
 main {
@@ -164,23 +149,12 @@ main #heading .wrap * {
 
 main .splash {
   font-size: var(--font-size-normal);
-  line-height: 1rem;
-  text-align: center;
 }
 
 main img {
   display: block;
-  margin: 3rem auto;
-  /* border: 4px solid black; */
+  margin: 16px auto;
   border-radius: 0.5em;
   padding: 1px;
   background-color: var(--color-black);
-}
-
-.link-icon {
-  display: inline-block;
-  height: 1.3rem;
-  width: 1.3rem;
-  top: 0.25rem;
-  position: relative;
 }
