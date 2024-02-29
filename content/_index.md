@@ -6,15 +6,15 @@ i'm a software developer and tinkerer. some of my interests include linux, open 
 
 ## projects
 
-some of my projects are on my [github](https://github.com/ddmetz).
+some of my projects are on my [github](https://github.com/shezdy).
 
 a few interesting ones:
 
-- [gtk shell](https://github.com/ddmetz/ags-dots): graphical shell for hyprland.
-- [awesome](https://github.com/ddmetz/awesome): config and widgets for awesome window manger.
-- [raycaster](https://github.com/ddmetz/raycaster): small raycasting game. (à la wolfenstein 3d)
-- [plantfetch](https://github.com/ddmetz/plantfetch): cute little system information tool.
-- [playlast](https://github.com/ddmetz/playlast): view last.fm statistics for spotify playlists.
+- [gtk shell](https://github.com/shezdy/ags-dots): graphical shell for hyprland.
+- [awesome](https://github.com/shezdy/awesome): config and widgets for awesome window manger.
+- [raycaster](https://github.com/shezdy/raycaster): small raycasting game. (à la wolfenstein 3d)
+- [plantfetch](https://github.com/shezdy/plantfetch): cute little system information tool.
+- [playlast](https://github.com/shezdy/playlast): view last.fm statistics for spotify playlists.
 
 ## contact
 
